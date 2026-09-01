@@ -61,7 +61,7 @@ tbody tr:hover {
 
 /* Cibler le titre grâce à son ID */
 #titre {
-    color: yellow;              /* Change la couleur du texte (rouge) */
+    color: green;              /* Change la couleur du texte (rouge) */
     font-size: 2.5rem;           /* Change la taille de la police */
     text-align: center;          /* Centre le titre */
     border-bottom: 3px solid #2c3e50; /* Ajoute une bordure en dessous */
