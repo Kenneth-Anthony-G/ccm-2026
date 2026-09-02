@@ -70,3 +70,107 @@ tbody tr:hover {
     font-family: 'Georgia', serif; /* Change la police d'écriture */
 
 }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    color: #1e293b;
+}
+
+.container {
+    width: 90%;
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin-bottom: 8px;
+    text-align: center;
+    color: #1d4ed8;
+}
+
+.intro {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #64748b;
+}
+
+label {
+    display: block;
+    margin: 18px 0 7px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px #93c5fd;
+}
+
+.checkbox {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.checkbox input {
+    width: auto;
+    margin-top: 2px;
+}
+
+button {
+    margin-top: 22px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button.reset {
+    margin-left: 8px;
+    background-color: #64748b;
+}
+
+button.reset:hover {
+    background-color: #475569;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+}
