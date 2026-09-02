@@ -4,30 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="css/ligne.css">
 </head>
 <body>
 
-    <h1>Contact</h1>
+    <main class="container">
+        <h1>Nous contacter</h1>
+        <p class="intro">Une question ? Envoyez-nous un message.</p>
 
-    <form action="#" method="post">
-        <div>
-            <label for="name">Nom :</label><br>
+        <form action="#" method="post">
+            <label for="name">Nom :</label>
             <input type="text" id="name" name="name" required>
-        </div>
-        <br>
-        <div>
-            <label for="email">Email :</label><br>
+
+            <label for="email">Email :</label>
             <input type="email" id="email" name="email" required>
-        </div>
-        <br>
-        <div>
-            <label for="message">Message :</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <br>
-        <button type="submit">Envoyer</button>
-        <p>Contact : Théo DA NASCIMENTO</p>
-    </form>
+
+            <label for="subject">Sujet :</label>
+            <select id="subject" name="subject" required>
+                <option value="">Choisir un sujet</option>
+                <option value="question">Question</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="probleme">Signaler un problème</option>
+            </select>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <label class="checkbox">
+                <input type="checkbox" required>
+                J'accepte que mes informations soient utilisées pour répondre à ma demande.
+            </label>
+
+            <button type="submit">Envoyer</button>
+            <button type="reset" class="reset">Réinitialiser</button>
+        </form>
+
+        <footer>
+            Contact : Théo DA NASCIMENTO
+        </footer>
+    </main>
 
 </body>
 </html>
