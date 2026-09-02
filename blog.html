@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Carnet de version : notes courtes sur la fabrication du web.">
+  <title>Carnet de version — Journal d’atelier</title>
+
+  <link rel="stylesheet" href="css/ligne.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="mark">↗</span><span>CARNET / DE VERSION</span></div>
+    <nav aria-label="Navigation principale"><a href="#articles">Articles</a><a href="#a-propos">À propos</a><button id="theme-toggle" type="button" aria-label="Changer de thème">Mode nuit</button></nav>
+  </header>
+  <section class="hero" id="a-propos">
+    <div><div class="eyebrow">Journal d’atelier · n° 01</div><h1>Des idées qui passent en production.</h1><p class="intro">Un blog indépendant sur les gestes concrets qui transforment une intuition en interface lisible, maintenable et un peu surprenante.</p></div>
+    <aside class="hero-note"><strong>Lire lentement.<br>Construire mieux.</strong>Des notes brèves, des essais honnêtes et des traces de travail. Mis à jour depuis Lille, entre deux commits.</aside>
+  </section>
+  <main id="articles">
+    <div class="toolbar"><label for="search">FILTRER LES NOTES <input id="search" type="search" placeholder="mot-clé…"></label><button id="reset" type="button">Tout afficher</button></div>
+    <section class="grid" aria-label="Liste des articles">
+      <article data-keywords="interface design espace"><span class="tag">Design · 06 min</span><h2>Le vide est une fonctionnalité</h2><p>Pourquoi une marge bien choisie peut résoudre plus de problèmes qu’un nouveau composant.</p><div class="meta"><span>12 juin 2026</span><span>↗ lire</span></div></article>
+      <article data-keywords="git version collaboration"><span class="tag">Code · 08 min</span><h2>Commiter comme on raconte</h2><p>Donner une intention à chaque étape pour que l’historique reste une carte, pas un cimetière.</p><div class="meta"><span>04 juin 2026</span><span>↗ lire</span></div></article>
+      <article data-keywords="accessibilite web attention"><span class="tag">Web · 05 min</span><h2>Les détails qui attendent</h2><p>Focus, contraste, rythme : rendre une page accueillante avant de la rendre brillante.</p><div class="meta"><span>28 mai 2026</span><span>↗ lire</span></div></article>
+    </section>
+    <section class="grid" aria-label="Liste des articles">
+      <article data-keywords="interface design espace"><span class="tag">Design · 06289 min</span><h2>Le vide est une fonctionnalité</h2><p>Pourquoi une marge bien choisie peut résoudre plus de problèmes qu’un nouveau composant.</p><div class="meta"><span>12 juin 2026</span><span>↗ lire</span></div></article>
+      <article data-keywords="git version collaboration"><span class="tag">Code · 08fz min</span><h2>Commiter comme on raconte</h2><p>Donner une intention à chaque étape pour que l’historique reste une carte, pas un cimetière.</p><div class="meta"><span>04 juin 2026</span><span>↗ lire</span></div></article>
+      <article data-keywords="accessibilite web attention"><span class="tag">Web · 05 min</span><h2>Les détails qui attendent</h2><p>Focus, contraste, rythme : rendre une page accueillante avant de la rendre brillante.</p><div class="meta"><span>28 mai 2026</span><span>↗ lire</span></div></article>
+    </section>
+  </main>
+  
+  <script>const q=document.querySelector('#search');q.addEventListener('input',()=>document.querySelectorAll('article').forEach(a=>a.hidden=q.value&&!((a.dataset.keywords+a.textContent).toLowerCase().includes(q.value.toLowerCase()))));document.querySelector('#reset').onclick=()=>{q.value='';q.dispatchEvent(new Event('input'))};document.querySelector('#theme-toggle').onclick=()=>document.body.classList.toggle('night');</script>
+</body>
+</html>
